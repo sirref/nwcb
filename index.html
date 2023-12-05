@@ -29,7 +29,7 @@
     fetch('https://raw.githubusercontent.com/sirref/nwcb/main/recipes.json')
     .then(response => response.json())
     .then(data => {
-      console.log((recipeName, integerValue, data));
+      console.log(breakdown(recipeName, integerValue, data));
     });
 
   }

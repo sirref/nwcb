@@ -32,6 +32,27 @@
     });
   }
 
+
+  function breakdown(item, number, recipes) {
+    if (!recipes[item]) {
+      return { [item]: number };
+    }
+
+    var recipe = {};
+    recipe[item] = {};
+
+    for (const [component, quantity] of Object.entries(recipes[item])) {
+      var dependentRecipe = breakdown(component, number * quantity, recipes);
+      if (!dependentRecipe) {
+        dependentRecipe = { [component]: number * quantity };
+      }
+
+      Object.assign(recipe[item], dependentRecipe);
+    }
+
+    return recipe;
+  }
+
   window.onload = loadRecipes;
 </script>
 

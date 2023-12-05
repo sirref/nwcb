@@ -1,0 +1,52 @@
+{
+    "prismatic ingot": {
+        "asmodeum": 1,
+        "mythril ingot": 10,
+        "charcoal": 4,
+        "obsidian flux": 4
+    },
+    "asmodeum": {
+        "orichalcum ingot": 5,
+        "tolvium": 1,
+        "cinnabar": 1,
+        "obsidian flux": 1,
+        "charcoal": 2
+    },
+    "orichalcum ingot": {
+        "orichalcum ore": 8,
+        "starmetal ingot": 2,
+        "charcoal": 2,
+        "obsidian flux": 1
+    },
+    "orichalcum ore": {},
+    "starmetal ingot": {
+        "starmetal ore": 6,
+        "steel ingot": 2,
+        "charcoal": 2,
+        "obsidian flux": 1
+    },
+    "starmetal ore": {},
+    "steel ingot": {
+        "iron ingot": 3,
+        "charcoal": 2,
+        "obsidian flux": 1
+    },
+    "iron ingot": {
+        "iron ore": 4
+    },
+    "iron ore": {},
+    "charcoal": {
+        "green wood": 2
+    },
+    "obsidian flux": {},
+    "green wood": {},
+    "tolvium": {},
+    "cinnabar": {},
+    "mythril ingot": {
+        "mythril ore": 12,
+        "orichalcum ingot": 2,
+        "charcoal": 2,
+        "obsidian flux": 1
+    },
+    "mythril ore": {}
+}

@@ -1,7 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Dynamic Dropdown Example</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<h2>Dynamic Dropdown</h2>
+
+<!-- Dropdown -->
+<select id="fruitDropdown">
+  <option value="apple">Apple</option>
+  <option value="orange">Orange</option>
+</select>
+
+<button onclick="addNewItem()">Add Item</button>
+
+<script>
+  function addNewItem() {
+    var newFruit = prompt("Enter a new fruit:");
+    if (newFruit) {
+      var select = document.getElementById("fruitDropdown");
+      var option = document.createElement("option");
+      option.text = newFruit;
+      option.value = newFruit.toLowerCase(); // Assign a value (lowercased newFruit in this example)
+      select.add(option);
+    }
+  }
+</script>
+
 </body>
 </html>

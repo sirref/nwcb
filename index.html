@@ -22,7 +22,7 @@
       var keys = Object.keys(data);
       keys.forEach(element => {
         console.log(element);
-        const listItem = document.createElement('li');
+        const listItem = document.createElement('option');
         listItem.textContent = `${element}`;
         recipeList.appendChild(listItem);
       });

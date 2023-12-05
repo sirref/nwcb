@@ -14,7 +14,21 @@
 <button onclick="calculateBreakdown()">Breakdown</button>
 <script>
   function calculateBreakdown() {
-    console.log("b");
+    var userInput = document.getElementById('numberInput').value;
+    var recipeName = document.getElementById('recipeDropdown').value;
+
+    // Convert the input value to an integer using parseInt()
+    var integerValue = parseInt(userInput);
+    if (isNaN(integerValue)) {
+      return;
+    }
+
+    fetch('https://raw.githubusercontent.com/sirref/nwcb/main/recipes.json')
+    .then(response => response.json())
+    .then(data => {
+      console.log((recipeName, integerValue, data));
+    });
+
   }
 
   function loadRecipes() {

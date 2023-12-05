@@ -23,6 +23,9 @@
       return;
     }
 
+    console.log(recipeName);
+    console.log(integerValue);
+
     fetch('https://raw.githubusercontent.com/sirref/nwcb/main/recipes.json')
     .then(response => response.json())
     .then(data => {

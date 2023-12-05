@@ -16,17 +16,6 @@
 <button onclick="addNewItem()">Add Item</button>
 
 <script>
-  function addNewItem() {
-    var newFruit = prompt("Enter a new fruit:");
-    if (newFruit) {
-      var select = document.getElementById("fruitDropdown");
-      var option = document.createElement("option");
-      option.text = newFruit;
-      option.value = newFruit.toLowerCase(); // Assign a value (lowercased newFruit in this example)
-      select.add(option);
-    }
-  }
-
   function loadRecipes() {
     fetch('https://raw.githubusercontent.com/sirref/nwcb/main/recipes.json')
     .then(response => response.json())
@@ -37,6 +26,8 @@
       console.error('Error fetching data:', error);
     });
   }
+
+  window.onload = loadRecipes;
 </script>
 
 </body>

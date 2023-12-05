@@ -20,6 +20,7 @@
     .then(data => {
       const recipeList = document.getElementById('recipeDropdown');
       data.array.forEach(element => {
+        console.log(element);
         const listItem = document.createElement('li');
         listItem.textContent = `${element}`;
         recipeList.appendChild(listItem);
